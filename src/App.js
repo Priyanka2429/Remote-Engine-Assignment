@@ -59,7 +59,7 @@ export default function Landing() {
         </div>
 
         {/* Right Image Section */}
-        <div className="lg:w-1/2 xl:w-7/12 relative">
+        <div  className="relative w-full h-[400px] lg:h-[600px]"> 
           <div className="relative aspect-square lg:aspect-auto lg:h-full">
             <img 
               src="/images/plant.png" 
