@@ -59,18 +59,20 @@ export default function Landing() {
         </div>
 
         {/* Right Image Section */}
-        <div  className="relative w-full h-[400px] lg:h-[600px]"> 
-          <div className="relative aspect-square lg:aspect-auto lg:h-full">
+        <div className="lg:w-1/2 xl:w-7/12 relative">
+          {/* Main Plant Image */}
+          <div className="relative w-full h-[400px] lg:h-[600px]">
             <img 
               src="/images/plant.png" 
-              alt="Main plant"
+              alt="Main plant illustration"
               className="w-full h-full object-contain"
+              loading="lazy"
             />
           </div>
 
           {/* Circular Text Element */}
           <img 
-            src="/images/Hero.png"
+            src="/images/Hero.png" 
             alt="Decorative circular text"
             className="absolute top-0 right-0 w-24 h-24 lg:w-32 lg:h-32 xl:w-36 xl:h-36"
           />
@@ -101,6 +103,7 @@ export default function Landing() {
                 src={card.imgSrc}
                 alt={card.title}
                 className="w-20 h-20 min-w-[80px] rounded-full object-cover border-2 border-gray-800"
+                loading="lazy"
               />
               <div>
                 <h3 className="font-poppins font-semibold text-base text-primary-green mb-1">
